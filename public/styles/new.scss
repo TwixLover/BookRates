@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(211, 211, 72);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    input{
+        width: 20%;
+        background-color: rgba(240, 224, 224, 0.582);
+      
+    }
+    #title, #author, #genre{
+        height: 25px;
+
+       }
+       #date{
+        width: 7%;
+       }
+       textarea{
+        height: 100px;
+        resize: none;
+        box-sizing: border-box;
+        width: 20.5%;
+        background-color: rgba(240, 224, 224, 0.582);
+       }
+       .button{
+        background-color: rgb(212, 212, 117);
+        width: 10%;
+        height: 30px;
+        font-size: 18px;
+       }
+       .button:hover{
+        background-color: rgb(247, 247, 133);
+        cursor: pointer;
+       }
+       select{
+        background-color: rgba(240, 224, 224, 0.582);
+       }
+}
+.form-2{
+    width: 100%;
+
+    table{
+      
+           #edit{
+            border: 1px solid black;
+            background-color: rgb(230, 230, 122);
+            height: 120%;
+            cursor: pointer;
+            scale: 1.2;
+           }
+           #edit:hover{
+            background-color: rgb(253, 253, 147);
+           }
+           input{
+        
+            background-color: rgba(240, 224, 224, 0.582);
+            width: 97%;
+        }
+    }
+    
+    button{
+        margin-top: 15px;
+        background-color: rgb(212, 212, 117);
+        width: 10%;
+        height: 30px;
+        font-size: 18px;
+        margin-left: 45%;
+       }
+       button:hover{
+        background-color: rgb(247, 247, 133);
+        cursor: pointer;
+       }
+       
+       
+}

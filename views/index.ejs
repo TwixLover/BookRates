@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>BookRatings</title>
+</head>
+<body>
+    <div class="header">
+        <h1><%= title %></h1>
+        <a href="/new">Edit book list</a>
+    </div>
+    <a><% books.forEach(book => { %>
+        <div class="books">
+            <div class="Title">
+    <img src="<%= book.coverurl %>" alt="Könyv borító" width="200"> 
+    
+        <h1><%= book.title %></h1>
+            </div>
+            <div class="main">
+            <div class="beside">
+                <div class="text" id="auth"><h5>Author:</h5><p><%= book.writer %></p></div>
+               <div class="text"> <h5>Genre:</h5>
+                    <p><%= book.genre %></p></div>
+                <div class="text"><h5>Rating:</h5>
+                    <p id="rat"><%= book.rating %>/10</p></div>
+            </div>
+     <ul><%= book.summary %></ul>
+     <div class="date">
+        <h5>Date of read:</h5>
+        <ul><%= book.dateofreading %></ul>
+    </div>
+</div>
+</div>
+
+    <% }) %></a>
+    
+</body>
+</html>

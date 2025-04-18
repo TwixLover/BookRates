@@ -1,0 +1,232 @@
+
+
+body{
+    background-color: khaki;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+ 
+  a{
+    text-decoration: none;
+    background-color: rgb(163, 157, 97);
+    font-size: 20px;
+    height: 40px;
+    width: 8%;
+    align-items: center;
+    color:black;
+   border-radius: 8px; 
+  }
+  a:hover{
+    background-color: rgb(122, 118, 71);
+  }
+}
+a{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(153, 152, 152,0.5);
+    justify-content:space-around;
+    flex-wrap: wrap;
+
+    .books{
+        width: 36%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 160px;
+        }
+        .Title{
+            flex-direction: column-reverse;
+            display: flex;
+
+            h1{
+                width: 150%;
+                padding-left: 18px;
+                
+            }
+        }
+        .beside{
+            display: flex;
+            flex-direction: row;
+            gap: 10%;
+            padding-top: 20%;
+            padding-left: 5%;
+            #auth{
+                white-space: nowrap; 
+                width: max-content;
+                p{
+                    padding-top: 17px;
+                    
+                }
+                
+            }
+            }
+            .text{
+                display: flex;
+                flex-direction: row;
+                gap:1%;
+
+                p{
+                    padding-top: 15%;
+                    font-size: 17px;
+                }
+                h5{
+                    font-size: 19px;
+                }
+                #rat{
+                    padding-top: 16.5px;
+                }
+            }
+            
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+
+            .date{
+                display: flex;
+                
+
+                h5{
+                    font-size: 19px;
+                    width: 150%;
+                    padding-left:40px;
+                }
+                ul{
+                    width: 150%;
+                    position: absolute;
+                   margin-left:125px;
+                   margin-top:33.5px;
+                   font-size: 17px;
+
+                    
+                }
+            }
+        }
+    }
+
+@media (max-width: 1024px) {
+    a {
+      .books {
+        width: 48%;
+        flex-direction: column;
+        align-items: flex-start;
+  
+        .beside {
+          flex-direction: column;
+          gap: 5%;
+          padding-top: 10%;
+        }
+  
+        .text {
+          flex-direction: column;
+          gap: 10px;
+        }
+  
+        .Title {
+          h1 {
+            width: 100%;
+            font-size: 1.5rem;
+          }
+        }
+  
+        img {
+          width: 120px;
+        }
+  
+        .main {
+          .date {
+            h5,
+            ul {
+              width: 100%;
+              margin-left: 0;
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    a {
+      flex-direction: column;
+      align-items: center;
+  
+      .books {
+        width: 90%;
+        align-items: center;
+  
+        .Title {
+          h1 {
+            text-align: center;
+            padding-left: 0;
+          }
+        }
+  
+        .beside {
+          align-items: center;
+          padding-left: 0;
+        }
+  
+        .text {
+          align-items: center;
+          text-align: center;
+        }
+  
+        .main {
+          .date {
+            ul {
+              position: static;
+              margin: 0;
+              padding: 0;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    a {
+      .books {
+        img {
+          width: 100px;
+        }
+  
+        .Title {
+          h1 {
+            font-size: 1.2rem;
+          }
+        }
+  
+        .text {
+          p,
+          h5,
+          #rat {
+            font-size: 14px;
+          }
+  
+          gap: 5px;
+        }
+  
+        .main {
+          .date {
+            h5,
+            ul {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  

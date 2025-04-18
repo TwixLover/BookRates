@@ -1,0 +1,179 @@
+body {
+  background-color: khaki;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.header a {
+  text-decoration: none;
+  background-color: rgb(163, 157, 97);
+  font-size: 20px;
+  height: 40px;
+  width: 8%;
+  align-items: center;
+  color: black;
+  border-radius: 8px;
+}
+.header a:hover {
+  background-color: rgb(122, 118, 71);
+}
+
+a {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(153, 152, 152, 0.5);
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+a .books {
+  width: 36%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+a .books img {
+  width: 160px;
+}
+a .books .Title {
+  flex-direction: column-reverse;
+  display: flex;
+}
+a .books .Title h1 {
+  width: 150%;
+  padding-left: 18px;
+}
+a .books .beside {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  padding-top: 20%;
+  padding-left: 5%;
+}
+a .books .beside #auth {
+  white-space: nowrap;
+  width: max-content;
+}
+a .books .beside #auth p {
+  padding-top: 17px;
+}
+a .books .text {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+a .books .text p {
+  padding-top: 15%;
+  font-size: 17px;
+}
+a .books .text h5 {
+  font-size: 19px;
+}
+a .books .text #rat {
+  padding-top: 16.5px;
+}
+a .main {
+  display: flex;
+  flex-direction: column;
+}
+a .main .date {
+  display: flex;
+}
+a .main .date h5 {
+  font-size: 19px;
+  width: 150%;
+  padding-left: 40px;
+}
+a .main .date ul {
+  width: 150%;
+  position: absolute;
+  margin-left: 125px;
+  margin-top: 33.5px;
+  font-size: 17px;
+}
+
+@media (max-width: 1024px) {
+  a .books {
+    width: 48%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  a .books .beside {
+    flex-direction: column;
+    gap: 5%;
+    padding-top: 10%;
+  }
+  a .books .text {
+    flex-direction: column;
+    gap: 10px;
+  }
+  a .books .Title h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  a .books img {
+    width: 120px;
+  }
+  a .books .main .date h5,
+  a .books .main .date ul {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  a {
+    flex-direction: column;
+    align-items: center;
+  }
+  a .books {
+    width: 90%;
+    align-items: center;
+  }
+  a .books .Title h1 {
+    text-align: center;
+    padding-left: 0;
+  }
+  a .books .beside {
+    align-items: center;
+    padding-left: 0;
+  }
+  a .books .text {
+    align-items: center;
+    text-align: center;
+  }
+  a .books .main .date ul {
+    position: static;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  a .books img {
+    width: 100px;
+  }
+  a .books .Title h1 {
+    font-size: 1.2rem;
+  }
+  a .books .text {
+    gap: 5px;
+  }
+  a .books .text p,
+  a .books .text h5,
+  a .books .text #rat {
+    font-size: 14px;
+  }
+  a .books .main .date h5,
+  a .books .main .date ul {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
